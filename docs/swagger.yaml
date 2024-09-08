@@ -1,0 +1,5263 @@
+basePath: /api/v1
+definitions:
+  database.AchievementInsertData:
+    properties:
+      id:
+        example: Không
+        type: string
+    type: object
+  database.AchievementResponseData:
+    properties:
+      id:
+        example: Không
+        type: string
+    type: object
+  database.AchievementUpdateData:
+    properties:
+      id:
+        example: Không
+        type: string
+    type: object
+  database.ActivityConfirmData:
+    properties:
+      confirm:
+        example: false
+        type: boolean
+    type: object
+  database.ActivityImportDeadlineInsertData:
+    properties:
+      end_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+      start_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+    type: object
+  database.ActivityImportDeadlineResponseData:
+    properties:
+      end_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+      start_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+    type: object
+  database.ActivityImportDeadlineUpdateData:
+    properties:
+      end_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      start_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+    type: object
+  database.ActivityInsertData:
+    properties:
+      category_group_code:
+        example: I.a
+        type: string
+      confirm:
+        example: false
+        type: boolean
+      description:
+        example: Mô tả
+        type: string
+      end_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      name:
+        example: Sinh viên với pháp luật
+        type: string
+      organization_id:
+        example: Hội sinh viên
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+      start_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+    type: object
+  database.ActivityPSQL:
+    properties:
+      category_group_code:
+        example: I.a
+        type: string
+      confirm:
+        example: false
+        type: boolean
+      created_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      deleted_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      deleter:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+      description:
+        example: Mô tả
+        type: string
+      end_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      id:
+        type: string
+      name:
+        description: CategoryGroup   CategoryGroup `json:"-" swaggerignore:"true"`
+        example: Sinh viên với pháp luật
+        type: string
+      organization_id:
+        example: Hội sinh viên
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+      start_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      updated_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      user_id:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+    type: object
+  database.ActivityResponseData:
+    properties:
+      category_group_code:
+        example: I.a
+        type: string
+      category_group_id:
+        type: string
+      confirm:
+        example: false
+        type: boolean
+      created_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      deleted_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      deleter:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+      deleter_name:
+        type: string
+      description:
+        example: Mô tả
+        type: string
+      end_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      id:
+        type: string
+      name:
+        description: CategoryGroup   CategoryGroup `json:"-" swaggerignore:"true"`
+        example: Sinh viên với pháp luật
+        type: string
+      organization_id:
+        example: Hội sinh viên
+        type: string
+      point_frame_id:
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+      start_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      unit:
+        type: string
+      updated_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      user_id:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+      user_name:
+        type: string
+    type: object
+  database.ActivityUpdateData:
+    properties:
+      category_group_code:
+        example: I.a
+        type: string
+      confirm:
+        example: false
+        type: boolean
+      deleter:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+      description:
+        example: Mô tả
+        type: string
+      end_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      name:
+        description: CategoryGroup   CategoryGroup `json:"-" swaggerignore:"true"`
+        example: Sinh viên với pháp luật
+        type: string
+      organization_id:
+        example: Hội sinh viên
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+      start_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      user_id:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+    type: object
+  database.AwardInsertData:
+    properties:
+      id:
+        example: Không
+        type: string
+    type: object
+  database.AwardResponseData:
+    properties:
+      id:
+        example: Không
+        type: string
+    type: object
+  database.AwardUpdateData:
+    properties:
+      id:
+        example: Không
+        type: string
+    type: object
+  database.CaculateDRLData:
+    properties:
+      mark:
+        description: |-
+          CategoryGroup CategoryGroup `json:"category_group"`
+          Category      Category      `json:"category"`
+        type: integer
+      point_frame:
+        $ref: '#/definitions/database.PointFramePSQL'
+    type: object
+  database.CategoryGroupCopyData:
+    properties:
+      To:
+        $ref: '#/definitions/database.SemesterSchoolYear'
+      from:
+        $ref: '#/definitions/database.SemesterSchoolYear'
+    type: object
+  database.CategoryGroupCopyResData:
+    properties:
+      num_category:
+        type: integer
+      num_category_group:
+        type: integer
+      num_point_frame:
+        type: integer
+      num_rating:
+        type: integer
+    type: object
+  database.CategoryGroupInsertData:
+    properties:
+      code:
+        example: I.a
+        type: string
+      id:
+        type: string
+      name:
+        example: Ý thức tham gia học tập
+        type: string
+      point_frame_id:
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+    type: object
+  database.CategoryGroupResponseData:
+    properties:
+      categories:
+        $ref: '#/definitions/types.JsonPsql'
+      code:
+        example: I.a
+        type: string
+      id:
+        type: string
+      name:
+        example: Ý thức tham gia học tập
+        type: string
+      point_frame_id:
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+    type: object
+  database.CategoryGroupUpdateData:
+    properties:
+      code:
+        example: I.a
+        type: string
+      name:
+        example: Ý thức tham gia học tập
+        type: string
+      point_frame_id:
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+    type: object
+  database.CategoryInsertData:
+    properties:
+      achievement_id:
+        example: Không
+        type: string
+      award_id:
+        example: Không
+        type: string
+      category_group_id:
+        example: I.a
+        type: string
+      content:
+        description: STU có STU không
+        example: Đi học đầy đủ, đúng giờ, nghiêm túc, không bỏ tiết
+        type: string
+      max_point:
+        example: -1
+        type: integer
+      note:
+        example: Ghi chú
+        type: string
+      point:
+        example: 15
+        type: integer
+      role:
+        example: BTC
+        type: string
+    type: object
+  database.CategoryResponseData:
+    properties:
+      achievement_id:
+        example: Không
+        type: string
+      award_id:
+        example: Không
+        type: string
+      category_group_id:
+        example: I.a
+        type: string
+      content:
+        description: STU có STU không
+        example: Đi học đầy đủ, đúng giờ, nghiêm túc, không bỏ tiết
+        type: string
+      id:
+        type: string
+      max_point:
+        example: -1
+        type: integer
+      note:
+        example: Ghi chú
+        type: string
+      point:
+        example: 15
+        type: integer
+      role:
+        example: BTC
+        type: string
+    type: object
+  database.CategoryUpdateData:
+    properties:
+      achievement_id:
+        example: Không
+        type: string
+      award_id:
+        example: Không
+        type: string
+      category_group_id:
+        example: I.a
+        type: string
+      content:
+        description: STU có STU không
+        example: Đi học đầy đủ, đúng giờ, nghiêm túc, không bỏ tiết
+        type: string
+      max_point:
+        example: -1
+        type: integer
+      note:
+        example: Ghi chú
+        type: string
+      point:
+        example: 15
+        type: integer
+      role:
+        example: BTC
+        type: string
+    type: object
+  database.CertificateInsertData:
+    properties:
+      created_at:
+        example: "2023-11-15T08:15:52.471Z"
+        type: string
+      mssv:
+        example: "22110175"
+        type: string
+      quantity:
+        example: 1
+        type: integer
+      reception_method:
+        example: Trực tuyến qua mail
+        type: string
+      school_year_id:
+        example:
+        - 20-21
+        items:
+          type: string
+        type: array
+      semester:
+        example:
+        - "2"
+        items:
+          type: string
+        type: array
+      student_id:
+        type: string
+    type: object
+  database.CertificateResData:
+    properties:
+      created_at:
+        type: string
+      date_of_birth:
+        type: string
+      id:
+        type: string
+      number:
+        type: integer
+      student_id:
+        type: string
+      student_major:
+        type: string
+      student_name:
+        type: string
+    type: object
+  database.CertificateResponseData:
+    properties:
+      created_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      deleted_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      deletion_reason:
+        example: Nhầm lẫn
+        type: string
+      exported_at:
+        type: string
+      id:
+        type: string
+      mssv:
+        type: string
+      name:
+        example: Nguyễn Đăng An
+        type: string
+      number:
+        example: 1
+        type: integer
+      quantity:
+        example: 1
+        type: integer
+      reception_method:
+        example: Trực tuyến qua mail
+        type: string
+      school_year_id:
+        example:
+        - 20-21
+        items:
+          type: string
+        type: array
+      semester:
+        example:
+        - "2"
+        items:
+          type: string
+        type: array
+      status:
+        type: string
+      student_birthday:
+        type: string
+      student_id:
+        type: string
+      student_major:
+        type: string
+      type:
+        description: '''all'' or ''custom'''
+        example: all
+        type: string
+      updated_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+    type: object
+  database.CertificateUpdateData:
+    properties:
+      deletion_reason:
+        example: Nhầm lẫn
+        type: string
+      exported_at:
+        type: string
+      number:
+        example: 1
+        type: integer
+      quantity:
+        example: 1
+        type: integer
+      reception_method:
+        example: Trực tuyến qua mail
+        type: string
+      school_year_id:
+        example:
+        - 20-21
+        items:
+          type: string
+        type: array
+      semester:
+        example:
+        - "2"
+        items:
+          type: string
+        type: array
+      status:
+        type: string
+      student_id:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+      type:
+        description: '''all'' or ''custom'''
+        example: all
+        type: string
+    type: object
+  database.ChangePassData:
+    properties:
+      new_password:
+        example: "456"
+        type: string
+      old_password:
+        example: "123"
+        type: string
+    type: object
+  database.ComplainInsertData:
+    properties:
+      complain_category:
+        type: object
+      content:
+        example: Điểm bị chênh lệch
+        type: string
+      owner:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+      proofs:
+        example: http://localhost:4001/docs/index.html#/Complains/post_complains
+        type: string
+      review_category:
+        type: object
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+    type: object
+  database.ComplainResponseData:
+    properties:
+      approve:
+        type: boolean
+      complain_category:
+        type: object
+      content:
+        example: Điểm bị chênh lệch
+        type: string
+      created_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      deleted_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      id:
+        type: string
+      officer_response:
+        type: string
+      owner:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+      proofs:
+        example: http://localhost:4001/docs/index.html#/Complains/post_complains
+        type: string
+      response:
+        type: string
+      review_category:
+        type: object
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+      status:
+        type: string
+      student:
+        $ref: '#/definitions/database.StudentInfo'
+      updated_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      user_id:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+    type: object
+  database.ComplainResponseInsertData:
+    properties:
+      text:
+        type: string
+    type: object
+  database.ComplainResponseResponseData:
+    properties:
+      id:
+        type: string
+      text:
+        type: string
+    type: object
+  database.ComplainResponseUpdateData:
+    properties:
+      text:
+        type: string
+    type: object
+  database.ComplainTimeInsertData:
+    properties:
+      end_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+      start_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+    type: object
+  database.ComplainTimeResponseData:
+    properties:
+      created_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      deleted_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      end_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      id:
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+      start_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      updated_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+    type: object
+  database.ComplainTimeUpdateData:
+    properties:
+      end_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+      start_time:
+        example: "2006-01-02T15:04:05.999999Z"
+        type: string
+    type: object
+  database.ComplainUpdateData:
+    properties:
+      approve:
+        type: boolean
+      complain_category:
+        type: object
+      content:
+        example: Điểm bị chênh lệch
+        type: string
+      officer_response:
+        type: string
+      owner:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+      proofs:
+        example: http://localhost:4001/docs/index.html#/Complains/post_complains
+        type: string
+      response:
+        type: string
+      review_category:
+        type: object
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+      status:
+        type: string
+      user_id:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+    type: object
+  database.DeletionReason:
+    properties:
+      deletion_reason:
+        example: Nhầm lẫn
+        type: string
+    type: object
+  database.FullDRLResponseData:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/database.GetFullDRLResponseData'
+        type: array
+      grade:
+        type: string
+      mark:
+        type: integer
+    type: object
+  database.GetAllUserDataResponse:
+    properties:
+      email:
+        example: ndan.itus@gmail.com
+        type: string
+      grant_role:
+        example:
+        - abc
+        - xyz
+        items:
+          type: string
+        type: array
+      id:
+        type: string
+      major:
+        type: string
+      name:
+        example: Nguyễn Đăng An
+        type: string
+      num_certificates:
+        type: integer
+      num_complains:
+        type: integer
+      officer_id:
+        example: "4232"
+        type: string
+      password:
+        example: "123"
+        type: string
+      phone:
+        example: "0379823839"
+        type: string
+      position:
+        type: string
+      role:
+        example: user
+        type: string
+      school:
+        example: stu
+        type: string
+      student_id:
+        example: "14120234"
+        type: string
+      unit_id:
+        example: Hội sinh viên
+        type: string
+      username:
+        example: ndan.itus@gmail.com
+        type: string
+    type: object
+  database.GetDRLResponseData:
+    properties:
+      activity:
+        items:
+          $ref: '#/definitions/database.StudentActivityData'
+        type: array
+      calculate_drl_data:
+        items:
+          $ref: '#/definitions/database.CaculateDRLData'
+        type: array
+      rating:
+        type: string
+      total_mark:
+        type: integer
+    type: object
+  database.GetFullDRLResponseData:
+    properties:
+      data:
+        $ref: '#/definitions/database.GetDRLResponseData'
+      grade:
+        example: "2"
+        type: string
+      mark:
+        example: 2
+        type: integer
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+    type: object
+  database.Login:
+    properties:
+      password:
+        example: "123"
+        type: string
+      username:
+        example: ndan.itus@gmail.com
+        type: string
+    required:
+    - password
+    - username
+    type: object
+  database.LoginResponse:
+    properties:
+      code:
+        example: 200
+        type: integer
+      data:
+        $ref: '#/definitions/database.UserDataResponse'
+      expire:
+        example: "2005-08-15T15:52:01+00:00"
+        type: string
+      token:
+        example: iuniu32neui3rn38fh784e5yn78f5r57R&FGU*^TU?;.'grteuiHIUN98
+        type: string
+    type: object
+  database.MajorInsertData:
+    properties:
+      major:
+        type: string
+    type: object
+  database.MajorResponseData:
+    properties:
+      id:
+        type: string
+      major:
+        type: string
+    type: object
+  database.MajorUpdateData:
+    properties:
+      major:
+        type: string
+    type: object
+  database.OrganizationInsertData:
+    properties:
+      id:
+        example: Cấp khoa
+        type: string
+    type: object
+  database.OrganizationResponseData:
+    properties:
+      id:
+        example: Cấp khoa
+        type: string
+    type: object
+  database.OrganizationUpdateData:
+    properties:
+      id:
+        example: Cấp khoa
+        type: string
+    type: object
+  database.PointFrameInsertData:
+    properties:
+      content:
+        example: I
+        type: string
+      deleted_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      description:
+        example: Mô tả
+        type: string
+      max_point:
+        example: 30
+        type: integer
+      min_point:
+        example: 10
+        type: integer
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+    type: object
+  database.PointFramePSQL:
+    properties:
+      content:
+        example: I
+        type: string
+      deleted_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      description:
+        example: Mô tả
+        type: string
+      id:
+        type: string
+      max_point:
+        example: 30
+        type: integer
+      min_point:
+        example: 10
+        type: integer
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+    type: object
+  database.PointFrameResponseData:
+    properties:
+      content:
+        example: I
+        type: string
+      deleted_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      description:
+        example: Mô tả
+        type: string
+      id:
+        type: string
+      max_point:
+        example: 30
+        type: integer
+      min_point:
+        example: 10
+        type: integer
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+    type: object
+  database.PointFrameUpdateData:
+    properties:
+      content:
+        example: I
+        type: string
+      deleted_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      description:
+        example: Mô tả
+        type: string
+      max_point:
+        example: 30
+        type: integer
+      min_point:
+        example: 10
+        type: integer
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+    type: object
+  database.RatingInsertData:
+    properties:
+      max_point:
+        example: 20
+        type: integer
+      min_point:
+        example: 5
+        type: integer
+      rating:
+        example: Giỏi
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "1"
+        type: string
+    type: object
+  database.RatingResponseData:
+    properties:
+      id:
+        type: string
+      max_point:
+        example: 20
+        type: integer
+      min_point:
+        example: 5
+        type: integer
+      rating:
+        example: Giỏi
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "1"
+        type: string
+    type: object
+  database.RatingUpdateData:
+    properties:
+      max_point:
+        example: 20
+        type: integer
+      min_point:
+        example: 5
+        type: integer
+      rating:
+        example: Giỏi
+        type: string
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "1"
+        type: string
+    type: object
+  database.Register:
+    properties:
+      email:
+        example: ndan.itus@gmail.com
+        type: string
+      grant_role:
+        example:
+        - abc
+        - xyz
+        items:
+          type: string
+        type: array
+      name:
+        example: Nguyễn Đăng An
+        type: string
+      officer_id:
+        example: "4232"
+        type: string
+      password:
+        example: "123"
+        type: string
+      phone:
+        example: "0379823839"
+        type: string
+      position:
+        type: string
+      role:
+        description: '"officer" or "student" (default)'
+        example: officer
+        type: string
+      student_id:
+        example: "14120234"
+        type: string
+      unit_id:
+        example: Hội sinh viên
+        type: string
+    type: object
+  database.ResetPassData:
+    properties:
+      new_password:
+        example: "456"
+        type: string
+    type: object
+  database.RoleInsertData:
+    properties:
+      id:
+        type: string
+    type: object
+  database.RoleResponseData:
+    properties:
+      id:
+        type: string
+    type: object
+  database.RoleUpdateData:
+    properties:
+      id:
+        type: string
+    type: object
+  database.SampleComplainResponseInsertData:
+    properties:
+      content:
+        type: string
+    type: object
+  database.SampleComplainResponseResponseData:
+    properties:
+      content:
+        type: string
+      id:
+        type: string
+    type: object
+  database.SampleComplainResponseUpdateData:
+    properties:
+      content:
+        type: string
+    type: object
+  database.SchoolYearInsertData:
+    properties:
+      id:
+        type: string
+    type: object
+  database.SchoolYearResponseData:
+    properties:
+      id:
+        type: string
+    type: object
+  database.SchoolYearUpdateData:
+    properties:
+      id:
+        type: string
+    type: object
+  database.SemesterSchoolYear:
+    properties:
+      school_year_id:
+        example: 20-21
+        type: string
+      semester:
+        example: "2"
+        type: string
+    type: object
+  database.SignInsertData:
+    properties:
+      name:
+        type: string
+      title:
+        type: string
+    type: object
+  database.SignResponseData:
+    properties:
+      created_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      deleted_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+      title:
+        type: string
+      updated_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+    type: object
+  database.SignUpdateData:
+    properties:
+      name:
+        type: string
+      title:
+        type: string
+    type: object
+  database.StudentActivityData:
+    properties:
+      activity:
+        $ref: '#/definitions/database.ActivityPSQL'
+      mark:
+        type: integer
+      student_activity:
+        $ref: '#/definitions/database.StudentActivityPSQL'
+    type: object
+  database.StudentActivityInsertData:
+    properties:
+      achievement:
+        example: Thành tích
+        type: string
+      activity_id:
+        example: dd0f4638-07c4-4f9d-a8bb-1f80c4bfbb08
+        type: string
+      award:
+        example: Khen thưởng
+        type: string
+      mssv:
+        example: "1511002"
+        type: string
+      note:
+        example: Ghi chú
+        type: string
+      role:
+        description: Mark        int    `json:"mark" example:"5"`
+        example: BTC
+        type: string
+      student_id:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+      student_name:
+        example: "1412023"
+        type: string
+    type: object
+  database.StudentActivityPSQL:
+    properties:
+      achievement:
+        example: Thành tích
+        type: string
+      activity_id:
+        example: dd0f4638-07c4-4f9d-a8bb-1f80c4bfbb08
+        type: string
+      award:
+        example: Khen thưởng
+        type: string
+      note:
+        example: Ghi chú
+        type: string
+      role:
+        description: Mark        int    `json:"mark" example:"5"`
+        example: BTC
+        type: string
+      student_id:
+        example: b30d54bf-9d9c-4220-a6a4-2f4bbaa99b94
+        type: string
+    type: object
+  database.StudentActivityResponseData:
+    properties:
+      mark:
+        type: integer
+      student_activity:
+        $ref: '#/definitions/database.StudentActivityPSQL'
+      student_info:
+        $ref: '#/definitions/database.StudentInfo'
+    type: object
+  database.StudentActivityUpdateData:
+    properties:
+      achievement:
+        example: Thành tích
+        type: string
+      activity_id:
+        type: string
+      award:
+        example: Khen thưởng
+        type: string
+      note:
+        example: Ghi chú
+        type: string
+      role:
+        description: Mark        int    `json:"mark" example:"5"`
+        example: BTC
+        type: string
+      student_id:
+        type: string
+    type: object
+  database.StudentInfo:
+    properties:
+      name:
+        example: Nguyễn Đăng An
+        type: string
+      student_id:
+        example: "1412023"
+        type: string
+    type: object
+  database.StudentInsertData:
+    properties:
+      class:
+        example: D20_CDTU01
+        type: string
+      date_of_birth:
+        example: 21/02/1996
+        type: string
+      date_of_id_card:
+        example: 06/02/2012
+        type: string
+      education_level:
+        example: Cử nhân
+        type: string
+      education_type:
+        example: Chính quy
+        type: string
+      email:
+        example: ndan.itus@gmail.com
+        type: string
+      gender:
+        example: Nam
+        type: string
+      id_card_number:
+        type: string
+      major:
+        example: Toán học
+        type: string
+      name:
+        example: Nguyễn Đăng An
+        type: string
+      note:
+        example: Nam
+        type: string
+      other_data:
+        type: object
+      phone_number:
+        example: "0379823839"
+        type: string
+      school_year:
+        example: 20-21
+        type: string
+      status:
+        example: Đang học
+        type: string
+      student_id:
+        type: string
+    type: object
+  database.StudentResponseData:
+    properties:
+      class:
+        example: D20_CDTU01
+        type: string
+      created_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      date_of_birth:
+        example: 21/02/1996
+        type: string
+      date_of_id_card:
+        example: 06/02/2012
+        type: string
+      deleted_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+      education_level:
+        example: Cử nhân
+        type: string
+      education_type:
+        example: Chính quy
+        type: string
+      email:
+        example: ndan.itus@gmail.com
+        type: string
+      gender:
+        example: Nam
+        type: string
+      id:
+        type: string
+      id_card_number:
+        type: string
+      major:
+        example: Toán học
+        type: string
+      name:
+        example: Nguyễn Đăng An
+        type: string
+      note:
+        example: Nam
+        type: string
+      other_data:
+        type: object
+      phone_number:
+        example: "0379823839"
+        type: string
+      school_year:
+        example: 20-21
+        type: string
+      status:
+        example: Đang học
+        type: string
+      student_id:
+        type: string
+      updated_at:
+        example: "2023-08-17T15:40:58.131023+07:00"
+        type: string
+    type: object
+  database.StudentUpdateData:
+    properties:
+      class:
+        example: D20_CDTU01
+        type: string
+      date_of_birth:
+        example: 21/02/1996
+        type: string
+      date_of_id_card:
+        example: 06/02/2012
+        type: string
+      education_level:
+        example: Cử nhân
+        type: string
+      education_type:
+        example: Chính quy
+        type: string
+      email:
+        example: ndan.itus@gmail.com
+        type: string
+      gender:
+        example: Nam
+        type: string
+      id_card_number:
+        type: string
+      major:
+        example: Toán học
+        type: string
+      name:
+        example: Nguyễn Đăng An
+        type: string
+      note:
+        example: Nam
+        type: string
+      other_data:
+        type: object
+      phone_number:
+        example: "0379823839"
+        type: string
+      school_year:
+        example: 20-21
+        type: string
+      status:
+        example: Đang học
+        type: string
+      student_id:
+        type: string
+    type: object
+  database.StudentUpdateStatusData:
+    properties:
+      graduated_student_ids:
+        items:
+          type: string
+        type: array
+      studying_student_ids:
+        items:
+          type: string
+        type: array
+    type: object
+  database.UnitInsertData:
+    properties:
+      id:
+        example: Hội sinh viên
+        type: string
+    type: object
+  database.UnitResponseData:
+    properties:
+      id:
+        example: Hội sinh viên
+        type: string
+    type: object
+  database.UnitUpdateData:
+    properties:
+      id:
+        example: Hội sinh viên
+        type: string
+    type: object
+  database.UserDataResponse:
+    properties:
+      email:
+        example: ndan.itus@gmail.com
+        type: string
+      grant_role:
+        example:
+        - abc
+        - xyz
+        items:
+          type: string
+        type: array
+      id:
+        type: string
+      name:
+        example: Nguyễn Đăng An
+        type: string
+      num_certificates:
+        type: integer
+      num_complains:
+        type: integer
+      officer_id:
+        example: "4232"
+        type: string
+      phone:
+        example: "0379823839"
+        type: string
+      position:
+        type: string
+      role:
+        example: user
+        type: string
+      school:
+        example: stu
+        type: string
+      student_id:
+        example: "14120234"
+        type: string
+      unit_id:
+        example: Hội sinh viên
+        type: string
+      username:
+        example: ndan.itus@gmail.com
+        type: string
+    type: object
+  database.UserUpdateData:
+    properties:
+      email:
+        example: ndan.itus@gmail.com
+        type: string
+      grant_role:
+        example:
+        - abc
+        - xyz
+        items:
+          type: string
+        type: array
+      name:
+        example: Nguyễn Đăng An
+        type: string
+      officer_id:
+        example: "4232"
+        type: string
+      phone:
+        example: "0379823839"
+        type: string
+      position:
+        type: string
+      restore:
+        type: boolean
+      student_id:
+        example: "14120234"
+        type: string
+      unit_id:
+        example: Hội sinh viên
+        type: string
+      username:
+        example: ndan.itus@gmail.com
+        type: string
+    type: object
+  model.HTTPError400:
+    properties:
+      message:
+        example: Status bad request
+        type: string
+    type: object
+  model.HTTPError500:
+    properties:
+      message:
+        example: Internal server error
+        type: string
+    type: object
+  types.JsonPsql:
+    properties:
+      val: {}
+    type: object
+info:
+  contact:
+    email: support@shub.vn
+    name: SHub Team
+    url: https://shub.vn
+  description: This is the DRLVN API Docs for using internally.
+  title: DRLVN API
+  version: "1.0"
+paths:
+  /achievements:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of achievements by giving a filter. A filter can
+        be formed based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.AchievementResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of achievements [OK]
+      tags:
+      - Achievements
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New achievement data
+        in: body
+        name: Achievement
+        required: true
+        schema:
+          $ref: '#/definitions/database.AchievementInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a achievement to database [OK]
+      tags:
+      - Achievements
+  /achievements/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Achievement id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a achievement [OK]
+      tags:
+      - Achievements
+    get:
+      consumes:
+      - application/json
+      description: Return a achievement if successful
+      parameters:
+      - description: Achievement id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.AchievementResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a achievement [OK]
+      tags:
+      - Achievements
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Achievement id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Achievement data to update. We can update all fields and omit
+          fields that don't need to be updated, the API only updates those fields
+          present in the object.
+        in: body
+        name: Achievement
+        required: true
+        schema:
+          $ref: '#/definitions/database.AchievementUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a achievement [OK]
+      tags:
+      - Achievements
+  /activities:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of activities by giving a filter. A filter can be
+        formed based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      parameters:
+      - description: Semester Filter
+        in: query
+        name: semester
+        required: true
+        type: string
+      - description: Scholl Year Filter
+        in: query
+        name: school_year_id
+        required: true
+        type: string
+      - description: Confirm Filter
+        in: query
+        name: confirm
+        type: boolean
+      - description: Deleted Filter
+        in: query
+        name: deleted
+        type: boolean
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.ActivityResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of activities [OK]
+      tags:
+      - Activities
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New activity data
+        in: body
+        name: Activity
+        required: true
+        schema:
+          $ref: '#/definitions/database.ActivityInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a activity to database [OK]
+      tags:
+      - Activities
+  /activities/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Delete permanently
+        in: query
+        name: permanently
+        type: boolean
+      - description: Activity id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a activity [OK]
+      tags:
+      - Activities
+    get:
+      consumes:
+      - application/json
+      description: Return a activity if successful
+      parameters:
+      - description: Activity id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.ActivityResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a activity [OK]
+      tags:
+      - Activities
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Activity id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Activity data to update. We can update all fields and omit fields
+          that don't need to be updated, the API only updates those fields present
+          in the object.
+        in: body
+        name: Activity
+        required: true
+        schema:
+          $ref: '#/definitions/database.ActivityUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a activity [OK]
+      tags:
+      - Activities
+  /activities/{id}/confirm:
+    patch:
+      consumes:
+      - application/json
+      description: Return an activity if successful
+      parameters:
+      - description: Confirm data
+        in: body
+        name: Activity
+        required: true
+        schema:
+          $ref: '#/definitions/database.ActivityConfirmData'
+      - description: Activity id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.ActivityResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Confirm an activity [OK]
+      tags:
+      - Activities
+  /activities/{id}/restore:
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Activity id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a activity [OK]
+      tags:
+      - Activities
+  /activity_import_deadlines:
+    post:
+      consumes:
+      - application/json
+      description: Return a list of activity_import_deadlines if successful
+      parameters:
+      - description: New activity_import_deadlines data
+        in: body
+        name: ActivityImportDeadline
+        required: true
+        schema:
+          items:
+            $ref: '#/definitions/database.ActivityImportDeadlineInsertData'
+          type: array
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted data
+          schema:
+            items:
+              $ref: '#/definitions/database.ActivityImportDeadlineInsertData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post activity_import_deadlines to database [OK]
+      tags:
+      - ActivityImportDeadlines
+  /activity_import_deadlines/{school_year_id}/{semester}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Semester
+        in: path
+        name: semester
+        required: true
+        type: string
+      - description: SchoolYearId
+        in: path
+        name: school_year_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a activity_import_deadline [OK]
+      tags:
+      - ActivityImportDeadlines
+    get:
+      consumes:
+      - application/json
+      description: Return a activity_import_deadline if successful
+      parameters:
+      - description: Semester
+        in: path
+        name: semester
+        required: true
+        type: string
+      - description: SchoolYearId
+        in: path
+        name: school_year_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.ActivityImportDeadlineResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a activity_import_deadline [OK]
+      tags:
+      - ActivityImportDeadlines
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Semester
+        in: path
+        name: semester
+        required: true
+        type: string
+      - description: SchoolYearId
+        in: path
+        name: school_year_id
+        required: true
+        type: string
+      - description: ActivityImportDeadline data to update. We can update all fields
+          and omit fields that don't need to be updated, the API only updates those
+          fields present in the object.
+        in: body
+        name: ActivityImportDeadline
+        required: true
+        schema:
+          $ref: '#/definitions/database.ActivityImportDeadlineUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a activity_import_deadline [OK]
+      tags:
+      - ActivityImportDeadlines
+  /awards:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of awards by giving a filter. A filter can be formed
+        based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.AwardResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of awards [OK]
+      tags:
+      - Awards
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New award data
+        in: body
+        name: Award
+        required: true
+        schema:
+          $ref: '#/definitions/database.AwardInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a award to database [OK]
+      tags:
+      - Awards
+  /awards/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Award id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a award [OK]
+      tags:
+      - Awards
+    get:
+      consumes:
+      - application/json
+      description: Return a award if successful
+      parameters:
+      - description: Award id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.AwardResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a award [OK]
+      tags:
+      - Awards
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Award id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Award data to update. We can update all fields and omit fields
+          that don't need to be updated, the API only updates those fields present
+          in the object.
+        in: body
+        name: Award
+        required: true
+        schema:
+          $ref: '#/definitions/database.AwardUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a award [OK]
+      tags:
+      - Awards
+  /categories:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of categories by giving a filter. A filter can be
+        formed based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.CategoryResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of categories [OK]
+      tags:
+      - Categories
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New category data
+        in: body
+        name: Category
+        required: true
+        schema:
+          $ref: '#/definitions/database.CategoryInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a category to database [OK]
+      tags:
+      - Categories
+  /categories/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Category id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a category [OK]
+      tags:
+      - Categories
+    get:
+      consumes:
+      - application/json
+      description: Return a category if successful
+      parameters:
+      - description: Category id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.CategoryResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a category [OK]
+      tags:
+      - Categories
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Category id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Category data to update. We can update all fields and omit fields
+          that don't need to be updated, the API only updates those fields present
+          in the object.
+        in: body
+        name: Category
+        required: true
+        schema:
+          $ref: '#/definitions/database.CategoryUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a category [OK]
+      tags:
+      - Categories
+  /category_groups:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of category_groups by giving a filter. A filter can
+        be formed based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      parameters:
+      - description: Semester Filter
+        in: query
+        name: semester
+        required: true
+        type: string
+      - description: Scholl Year Filter
+        in: query
+        name: school_year_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.CategoryGroupResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of category_groups [OK]
+      tags:
+      - CategoryGroups
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New category_group data
+        in: body
+        name: CategoryGroup
+        required: true
+        schema:
+          $ref: '#/definitions/database.CategoryGroupInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a category_group to database [OK]
+      tags:
+      - CategoryGroups
+  /category_groups/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: CategoryGroup id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a category_group [OK]
+      tags:
+      - CategoryGroups
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: CategoryGroup id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: CategoryGroup data to update. We can update all fields and omit
+          fields that don't need to be updated, the API only updates those fields
+          present in the object.
+        in: body
+        name: CategoryGroup
+        required: true
+        schema:
+          $ref: '#/definitions/database.CategoryGroupUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a category_group [OK]
+      tags:
+      - CategoryGroups
+  /category_groups/copy:
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: Copy data
+        in: body
+        name: CategoryGroup
+        required: true
+        schema:
+          $ref: '#/definitions/database.CategoryGroupCopyData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            $ref: '#/definitions/database.CategoryGroupCopyResData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Copy point_frame, category_group, category [OK]
+      tags:
+      - CategoryGroups
+  /certificates:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of certificates by giving a filter. A filter can
+        be formed based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      parameters:
+      - description: Deleted Filter
+        in: query
+        name: deleted
+        type: boolean
+      - description: Deleted Filter
+        in: query
+        name: status
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.CertificateResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of certificates [OK]
+      tags:
+      - Certificates
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New certificate data
+        in: body
+        name: Certificate
+        required: true
+        schema:
+          $ref: '#/definitions/database.CertificateInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            $ref: '#/definitions/database.CertificateResData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a certificate to database [OK]
+      tags:
+      - Certificates
+  /certificates/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Certificate id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Deletion Reason
+        in: body
+        name: DeletionReason
+        required: true
+        schema:
+          $ref: '#/definitions/database.DeletionReason'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a certificate [OK]
+      tags:
+      - Certificates
+    get:
+      consumes:
+      - application/json
+      description: Return a certificate if successful
+      parameters:
+      - description: Certificate id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.CertificateResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a certificate [OK]
+      tags:
+      - Certificates
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Certificate id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Certificate data to update. We can update all fields and omit
+          fields that don't need to be updated, the API only updates those fields
+          present in the object.
+        in: body
+        name: Certificate
+        required: true
+        schema:
+          $ref: '#/definitions/database.CertificateUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a certificate [OK]
+      tags:
+      - Certificates
+  /certificates/{id}/restore:
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Certificates id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Restore a certificate [OK]
+      tags:
+      - Certificates
+  /certificates/many:
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New certificate data
+        in: body
+        name: Certificate
+        required: true
+        schema:
+          items:
+            $ref: '#/definitions/database.CertificateInsertData'
+          type: array
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            $ref: '#/definitions/database.CertificateResData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a certificate to database [OK]
+      tags:
+      - Certificates
+  /complain_responses:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of complain_responses by giving a filter. A filter
+        can be formed based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.ComplainResponseResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of complain_responses [OK]
+      tags:
+      - ComplainResponses
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New complain_response data
+        in: body
+        name: ComplainResponse
+        required: true
+        schema:
+          $ref: '#/definitions/database.ComplainResponseInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a complain_response to database [OK]
+      tags:
+      - ComplainResponses
+  /complain_responses/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: ComplainResponse id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a complain_response [OK]
+      tags:
+      - ComplainResponses
+    get:
+      consumes:
+      - application/json
+      description: Return a complain_response if successful
+      parameters:
+      - description: ComplainResponse id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.ComplainResponseResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a complain_response [OK]
+      tags:
+      - ComplainResponses
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: ComplainResponse id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: ComplainResponse data to update. We can update all fields and
+          omit fields that don't need to be updated, the API only updates those fields
+          present in the object.
+        in: body
+        name: ComplainResponse
+        required: true
+        schema:
+          $ref: '#/definitions/database.ComplainResponseUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a complain_response [OK]
+      tags:
+      - ComplainResponses
+  /complain_times:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of complain_times by giving a filter. A filter can
+        be formed based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.ComplainTimeResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of complain_times [OK]
+      tags:
+      - ComplainTimes
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New complain_time data
+        in: body
+        name: ComplainTime
+        required: true
+        schema:
+          $ref: '#/definitions/database.ComplainTimeInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a complain_time to database [OK]
+      tags:
+      - ComplainTimes
+  /complain_times/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: ComplainTime id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a complain_time [OK]
+      tags:
+      - ComplainTimes
+    get:
+      consumes:
+      - application/json
+      description: Return a complain_time if successful
+      parameters:
+      - description: ComplainTime id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.ComplainTimeResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a complain_time [OK]
+      tags:
+      - ComplainTimes
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: ComplainTime id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: ComplainTime data to update. We can update all fields and omit
+          fields that don't need to be updated, the API only updates those fields
+          present in the object.
+        in: body
+        name: ComplainTime
+        required: true
+        schema:
+          $ref: '#/definitions/database.ComplainTimeUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a complain_time [OK]
+      tags:
+      - ComplainTimes
+  /complains:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of complains by giving a filter. A filter can be
+        formed based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.ComplainResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of complains [OK]
+      tags:
+      - Complains
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New complain data
+        in: body
+        name: Complain
+        required: true
+        schema:
+          $ref: '#/definitions/database.ComplainInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a complain to database [OK]
+      tags:
+      - Complains
+  /complains/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Complain id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a complain [OK]
+      tags:
+      - Complains
+    get:
+      consumes:
+      - application/json
+      description: Return a complain if successful
+      parameters:
+      - description: Complain id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.ComplainResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a complain [OK]
+      tags:
+      - Complains
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Complain id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Complain data to update. We can update all fields and omit fields
+          that don't need to be updated, the API only updates those fields present
+          in the object.
+        in: body
+        name: Complain
+        required: true
+        schema:
+          $ref: '#/definitions/database.ComplainUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a complain [OK]
+      tags:
+      - Complains
+  /majors:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of majors by giving a filter. A filter can be formed
+        based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.MajorResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of majors [OK]
+      tags:
+      - Majors
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New major data
+        in: body
+        name: Major
+        required: true
+        schema:
+          $ref: '#/definitions/database.MajorInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a major to database [OK]
+      tags:
+      - Majors
+  /majors/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Major id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a major [OK]
+      tags:
+      - Majors
+    get:
+      consumes:
+      - application/json
+      description: Return a major if successful
+      parameters:
+      - description: Major id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.MajorResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a major [OK]
+      tags:
+      - Majors
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Major id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Major data to update. We can update all fields and omit fields
+          that don't need to be updated, the API only updates those fields present
+          in the object.
+        in: body
+        name: Major
+        required: true
+        schema:
+          $ref: '#/definitions/database.MajorUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a major [OK]
+      tags:
+      - Majors
+  /organizations:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of organizations by giving a filter. A filter can
+        be formed based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.OrganizationResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of organizations [OK]
+      tags:
+      - Organizations
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New organization data
+        in: body
+        name: Organization
+        required: true
+        schema:
+          $ref: '#/definitions/database.OrganizationInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a organization to database [OK]
+      tags:
+      - Organizations
+  /organizations/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Organization id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a organization [OK]
+      tags:
+      - Organizations
+    get:
+      consumes:
+      - application/json
+      description: Return a organization if successful
+      parameters:
+      - description: Organization id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.OrganizationResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a organization [OK]
+      tags:
+      - Organizations
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Organization id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Organization data to update. We can update all fields and omit
+          fields that don't need to be updated, the API only updates those fields
+          present in the object.
+        in: body
+        name: Organization
+        required: true
+        schema:
+          $ref: '#/definitions/database.OrganizationUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a organization [OK]
+      tags:
+      - Organizations
+  /point_frames:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of point_frames by giving a filter. A filter can
+        be formed based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.PointFrameResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of point_frames [OK]
+      tags:
+      - PointFrames
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New point_frame data
+        in: body
+        name: PointFrame
+        required: true
+        schema:
+          $ref: '#/definitions/database.PointFrameInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a point_frame to database [OK]
+      tags:
+      - PointFrames
+  /point_frames/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: PointFrame id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a point_frame [OK]
+      tags:
+      - PointFrames
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: PointFrame id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: PointFrame data to update. We can update all fields and omit
+          fields that don't need to be updated, the API only updates those fields
+          present in the object.
+        in: body
+        name: PointFrame
+        required: true
+        schema:
+          $ref: '#/definitions/database.PointFrameUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a point_frame [OK]
+      tags:
+      - PointFrames
+  /ratings:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of ratings by giving a filter. A filter can be formed
+        based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      parameters:
+      - description: Semester Filter
+        in: query
+        name: semester
+        required: true
+        type: string
+      - description: Scholl Year Filter
+        in: query
+        name: school_year_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.RatingResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of ratings [OK]
+      tags:
+      - Ratings
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New rating data
+        in: body
+        name: Rating
+        required: true
+        schema:
+          $ref: '#/definitions/database.RatingInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a rating to database [OK]
+      tags:
+      - Ratings
+  /ratings/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Rating id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a rating [OK]
+      tags:
+      - Ratings
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Rating id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Rating data to update. We can update all fields and omit fields
+          that don't need to be updated, the API only updates those fields present
+          in the object.
+        in: body
+        name: Rating
+        required: true
+        schema:
+          $ref: '#/definitions/database.RatingUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a rating [OK]
+      tags:
+      - Ratings
+  /roles:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of roles by giving a filter. A filter can be formed
+        based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.RoleResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of roles [OK]
+      tags:
+      - Roles
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New role data
+        in: body
+        name: Role
+        required: true
+        schema:
+          $ref: '#/definitions/database.RoleInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a role to database [OK]
+      tags:
+      - Roles
+  /roles/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Role id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a role [OK]
+      tags:
+      - Roles
+    get:
+      consumes:
+      - application/json
+      description: Return a role if successful
+      parameters:
+      - description: Role id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.RoleResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a role [OK]
+      tags:
+      - Roles
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Role id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Role data to update. We can update all fields and omit fields
+          that don't need to be updated, the API only updates those fields present
+          in the object.
+        in: body
+        name: Role
+        required: true
+        schema:
+          $ref: '#/definitions/database.RoleUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a role [OK]
+      tags:
+      - Roles
+  /sample_complain_responses:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of sample_complain_responses by giving a filter.
+        A filter can be formed based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.SampleComplainResponseResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of sample_complain_responses [OK]
+      tags:
+      - SampleComplainResponses
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New sample_complain_response data
+        in: body
+        name: SampleComplainResponse
+        required: true
+        schema:
+          $ref: '#/definitions/database.SampleComplainResponseInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a sample_complain_response to database [OK]
+      tags:
+      - SampleComplainResponses
+  /sample_complain_responses/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: SampleComplainResponse id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a sample_complain_response [OK]
+      tags:
+      - SampleComplainResponses
+    get:
+      consumes:
+      - application/json
+      description: Return a sample_complain_response if successful
+      parameters:
+      - description: SampleComplainResponse id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.SampleComplainResponseResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a sample_complain_response [OK]
+      tags:
+      - SampleComplainResponses
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: SampleComplainResponse id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: SampleComplainResponse data to update. We can update all fields
+          and omit fields that don't need to be updated, the API only updates those
+          fields present in the object.
+        in: body
+        name: SampleComplainResponse
+        required: true
+        schema:
+          $ref: '#/definitions/database.SampleComplainResponseUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a sample_complain_response [OK]
+      tags:
+      - SampleComplainResponses
+  /school_years:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of school_years by giving a filter. A filter can
+        be formed based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.SchoolYearResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of school_years [OK]
+      tags:
+      - SchoolYears
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New school_year data
+        in: body
+        name: SchoolYear
+        required: true
+        schema:
+          $ref: '#/definitions/database.SchoolYearInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a school_year to database [OK]
+      tags:
+      - SchoolYears
+  /school_years/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: SchoolYear id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a school_year [OK]
+      tags:
+      - SchoolYears
+    get:
+      consumes:
+      - application/json
+      description: Return a school_year if successful
+      parameters:
+      - description: SchoolYear id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.SchoolYearResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a school_year [OK]
+      tags:
+      - SchoolYears
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: SchoolYear id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: SchoolYear data to update. We can update all fields and omit
+          fields that don't need to be updated, the API only updates those fields
+          present in the object.
+        in: body
+        name: SchoolYear
+        required: true
+        schema:
+          $ref: '#/definitions/database.SchoolYearUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a school_year [OK]
+      tags:
+      - SchoolYears
+  /signs:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of signs by giving a filter. A filter can be formed
+        based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.SignResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of signs [OK]
+      tags:
+      - Signs
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New sign data
+        in: body
+        name: Sign
+        required: true
+        schema:
+          $ref: '#/definitions/database.SignInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a sign to database [OK]
+      tags:
+      - Signs
+  /signs/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Sign id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a sign [OK]
+      tags:
+      - Signs
+    get:
+      consumes:
+      - application/json
+      description: Return a sign if successful
+      parameters:
+      - description: Sign id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.SignResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a sign [OK]
+      tags:
+      - Signs
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Sign id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Sign data to update. We can update all fields and omit fields
+          that don't need to be updated, the API only updates those fields present
+          in the object.
+        in: body
+        name: Sign
+        required: true
+        schema:
+          $ref: '#/definitions/database.SignUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a sign [OK]
+      tags:
+      - Signs
+  /student_activities:
+    post:
+      consumes:
+      - application/json
+      description: Return a list of student_activities if successful
+      parameters:
+      - description: New student_activities data
+        in: body
+        name: StudentActivity
+        required: true
+        schema:
+          items:
+            $ref: '#/definitions/database.StudentActivityInsertData'
+          type: array
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted data
+          schema:
+            items:
+              $ref: '#/definitions/database.StudentActivityInsertData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post student_activities to database [OK]
+      tags:
+      - StudentActivities
+  /student_activities/{student-id}:
+    get:
+      consumes:
+      - application/json
+      description: Return a student_activity if successful
+      parameters:
+      - description: Student id
+        in: path
+        name: student-id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.StudentActivityResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a student_activity [OK]
+      tags:
+      - StudentActivities
+  /student_activities/{student-id}/{activity-id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Student id
+        in: path
+        name: student-id
+        required: true
+        type: string
+      - description: Activity id
+        in: path
+        name: activity-id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a student_activity [OK]
+      tags:
+      - StudentActivities
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: StudentActivity id
+        in: path
+        name: student-id
+        required: true
+        type: string
+      - description: StudentActivity id
+        in: path
+        name: activity-id
+        required: true
+        type: string
+      - description: StudentActivity data to update. We can update all fields and
+          omit fields that don't need to be updated, the API only updates those fields
+          present in the object.
+        in: body
+        name: StudentActivity
+        required: true
+        schema:
+          $ref: '#/definitions/database.StudentActivityUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a student_activity [OK]
+      tags:
+      - StudentActivities
+  /student_activities/all/{activity-id}:
+    get:
+      consumes:
+      - application/json
+      description: Return a student_activity if successful
+      parameters:
+      - description: Activity id
+        in: path
+        name: activity-id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.StudentActivityResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a student_activity [OK]
+      tags:
+      - StudentActivities
+  /students:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of students by giving a filter. A filter can be formed
+        based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      parameters:
+      - description: Limit
+        in: query
+        name: limit
+        required: true
+        type: string
+      - description: Offset
+        in: query
+        name: offset
+        required: true
+        type: string
+      - description: Student name for searching
+        in: query
+        name: search-name
+        type: string
+      - description: Student name for searching
+        in: query
+        name: sort-field
+        type: string
+      - description: Student name for searching
+        in: query
+        name: sort-option
+        type: string
+      - description: "14"
+        in: query
+        name: year
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.StudentResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of students [OK]
+      tags:
+      - Students
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Student data to update. We can update all fields and omit fields
+          that don't need to be updated, the API only updates those fields present
+          in the object.
+        in: body
+        name: Student
+        required: true
+        schema:
+          $ref: '#/definitions/database.StudentUpdateStatusData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update student status [OK]
+      tags:
+      - Students
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New student data
+        in: body
+        name: Student
+        required: true
+        schema:
+          $ref: '#/definitions/database.StudentInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a student to database [OK]
+      tags:
+      - Students
+  /students/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Student id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a student [OK]
+      tags:
+      - Students
+    get:
+      consumes:
+      - application/json
+      description: Return a student if successful
+      parameters:
+      - description: Student id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.StudentResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a student [OK]
+      tags:
+      - Students
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Student id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Student data to update. We can update all fields and omit fields
+          that don't need to be updated, the API only updates those fields present
+          in the object.
+        in: body
+        name: Student
+        required: true
+        schema:
+          $ref: '#/definitions/database.StudentUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a student [OK]
+      tags:
+      - Students
+  /students/drl/{year}/{semester}:
+    get:
+      consumes:
+      - application/json
+      description: This API will return student DRL.
+      parameters:
+      - description: School Year
+        example: 21-22
+        in: path
+        name: year
+        required: true
+        type: string
+      - description: School Semester
+        example: 1
+        in: path
+        name: semester
+        required: true
+        type: integer
+      - description: Student ID
+        in: query
+        name: student-id
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.GetDRLResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/model.HTTPError500'
+      security:
+      - ApiKeyAuth: []
+      summary: Get student DRL
+      tags:
+      - Students
+  /students/full_course_drl/{year}/{semester}:
+    get:
+      consumes:
+      - application/json
+      description: This API will return student DRL.
+      parameters:
+      - description: Student ID
+        in: query
+        name: student-id
+        type: string
+      - description: "14"
+        in: query
+        name: year
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.FullDRLResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/model.HTTPError500'
+      security:
+      - ApiKeyAuth: []
+      summary: Get student DRL
+      tags:
+      - Students
+  /students/many:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: STUDENT ID TO DELETE
+        in: body
+        name: Student
+        required: true
+        schema:
+          items:
+            type: string
+          type: array
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete students [OK]
+      tags:
+      - Students
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New student data
+        in: body
+        name: Student
+        required: true
+        schema:
+          items:
+            $ref: '#/definitions/database.StudentInsertData'
+          type: array
+      - description: Default = true
+        in: query
+        name: override
+        required: true
+        type: boolean
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a student to database [OK]
+      tags:
+      - Students
+  /students/student-id/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Return a student if successful
+      parameters:
+      - description: Student id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.StudentResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a student by studentID [OK]
+      tags:
+      - Students
+  /units:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of units by giving a filter. A filter can be formed
+        based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.UnitResponseData'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of units [OK]
+      tags:
+      - Units
+    post:
+      consumes:
+      - application/json
+      description: Return a id if successful
+      parameters:
+      - description: New unit data
+        in: body
+        name: Unit
+        required: true
+        schema:
+          $ref: '#/definitions/database.UnitInsertData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Inserted Unit ID
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post a unit to database [OK]
+      tags:
+      - Units
+  /units/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: Unit id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete a unit [OK]
+      tags:
+      - Units
+    get:
+      consumes:
+      - application/json
+      description: Return a unit if successful
+      parameters:
+      - description: Unit id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.UnitResponseData'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a unit [OK]
+      tags:
+      - Units
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: Unit id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Unit data to update. We can update all fields and omit fields
+          that don't need to be updated, the API only updates those fields present
+          in the object.
+        in: body
+        name: Unit
+        required: true
+        schema:
+          $ref: '#/definitions/database.UnitUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a unit [OK]
+      tags:
+      - Units
+  /users:
+    get:
+      consumes:
+      - application/json
+      description: Return a list of users by giving a filter. A filter can be formed
+        based on the data columns of a table. For example ?num_staff=10&name="Trạm
+        cân 10"&deleted=true. You can also search for more values for a field, for
+        example ?num_staff=10&num_staff=9.
+      parameters:
+      - description: Role filter
+        in: query
+        name: role
+        type: string
+      - description: Deleted Filter
+        in: query
+        name: deleted
+        type: boolean
+      - description: Limit
+        in: query
+        name: limit
+        required: true
+        type: string
+      - description: Offset
+        in: query
+        name: offset
+        required: true
+        type: string
+      - description: Student name for searching
+        in: query
+        name: sort-field
+        type: string
+      - description: Student name for searching
+        in: query
+        name: major
+        type: string
+      - description: Student name for searching
+        in: query
+        name: sort-option
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/database.GetAllUserDataResponse'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get a list of users [OK]
+      tags:
+      - Users
+    post:
+      consumes:
+      - application/json
+      description: Register a new user
+      parameters:
+      - description: Register information
+        in: body
+        name: Info
+        required: true
+        schema:
+          $ref: '#/definitions/database.Register'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.Register'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: User register [OK]
+      tags:
+      - Users
+  /users/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Returns deleted rows
+      parameters:
+      - description: User id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of deleted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Delete an user [OK]
+      tags:
+      - Users
+    patch:
+      consumes:
+      - application/json
+      description: Returns the number of rows updated
+      parameters:
+      - description: User id
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: User data to update. We can update all fields and omit fields
+          that don't need to be updated, the API only updates those fields present
+          in the object.
+        in: body
+        name: Good
+        required: true
+        schema:
+          $ref: '#/definitions/database.UserUpdateData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Update a user [OK]
+      tags:
+      - Users
+  /users/{id}/change-password:
+    post:
+      consumes:
+      - application/json
+      description: Reset user password.
+      parameters:
+      - description: Change password data
+        in: body
+        name: ChangePassData
+        required: true
+        schema:
+          $ref: '#/definitions/database.ResetPassData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.UserDataResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Reset user password [OK]
+      tags:
+      - Users
+  /users/change-password:
+    post:
+      consumes:
+      - application/json
+      description: Change user password.
+      parameters:
+      - description: Change password data
+        in: body
+        name: ChangePassData
+        required: true
+        schema:
+          $ref: '#/definitions/database.ChangePassData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.UserDataResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Change user password [OK]
+      tags:
+      - Users
+  /users/info:
+    get:
+      consumes:
+      - application/json
+      description: Returns user information
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.UserDataResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Get user information [OK]
+      tags:
+      - Users
+  /users/login:
+    post:
+      consumes:
+      - application/json
+      description: User login with username and password
+      parameters:
+      - description: Login information
+        in: body
+        name: Info
+        required: true
+        schema:
+          $ref: '#/definitions/database.Login'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.LoginResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/model.HTTPError500'
+      summary: User login [OK]
+      tags:
+      - Users
+  /users/many:
+    post:
+      consumes:
+      - application/json
+      description: Post many users
+      parameters:
+      - description: User data
+        in: body
+        name: Info
+        required: true
+        schema:
+          items:
+            $ref: '#/definitions/database.Register'
+          type: array
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of inserted rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Post many users [OK]
+      tags:
+      - Users
+  /users/reset_num_certificates:
+    post:
+      consumes:
+      - application/json
+      description: Reset num_certificates
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Reset num_certificates [OK]
+      tags:
+      - Users
+  /users/reset_num_complains:
+    post:
+      consumes:
+      - application/json
+      description: Reset num_certificates
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: The number of updated rows
+          schema:
+            type: integer
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/model.HTTPError400'
+      security:
+      - ApiKeyAuth: []
+      summary: Reset num_certificates [OK]
+      tags:
+      - Users
+securityDefinitions:
+  ApiKeyAuth:
+    description: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6ImM2NTRmNDA1LTdlMjYtNDI4ZS05OWQ0LWE5MDg4MmY5YWVjYSIsIk5hbWUiOiJwY3RzdmhjbXVzIiwiUm9sZSI6ImFkbWluIiwiU2Nob29sIjoiaGNtdXMiLCJleHAiOjE3MTg2MzkxMDQsIm9yaWdfaWF0IjoxNzAzMDg3MTA0fQ._oBOk8qaqyrVv42kFNdks32yfS_ZzxbVBmdZhT2JgXk
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
+tags:
+- description: All APIs to interact with users
+  name: Users
+- description: All APIs to interact with activities
+  name: Activities
+- description: All APIs to interact with students
+  name: Students
+- description: All APIs to interact with categories
+  name: Categories
+- description: All APIs to interact with ratings
+  name: Ratings
+- description: All APIs to interact with category_groups
+  name: CategoryGroups
+- description: All APIs to interact with units
+  name: Units
+- description: All APIs to interact with awards
+  name: Awards
+- description: All APIs to interact with achievements
+  name: Achievements
+- description: All APIs to interact with school_years
+  name: SchoolYears
+- description: All APIs to interact with point_frames
+  name: PointFrames
+- description: All APIs to interact with student_activities
+  name: StudentActivities
+- description: All APIs to interact with activity_import_deadlines
+  name: ActivityImportDeadlines
+- description: All APIs to interact with certificates
+  name: Certificates
+- description: All APIs to interact with signs
+  name: Signs
+- description: All APIs to interact with roles
+  name: Roles
+- description: All APIs to interact with complains
+  name: Complains
+- description: All APIs to interact with complain_times
+  name: ComplainTimes
+- description: All APIs to interact with complain_responses
+  name: ComplainResponses
+- description: All APIs to interact with majors
+  name: Majors
+- description: All APIs to interact with sample_complain_responses
+  name: SampleComplainResponses
