@@ -1,6 +1,6 @@
 package database
 
-type TopicBaseData struct {
+type JoinTopicBaseData struct {
 	Id_Teacher string `json:"MAGV" gorm:"column:MAGV"`
 	Id_Topic   string `json:"MADT" gorm:"column:MADT"`
 	STT        string `json:"STT" gorm:"column:STT"`
@@ -8,6 +8,6 @@ type TopicBaseData struct {
 	Result     string `json:"KETQUA" gorm:"column:KETQUA"`
 }
 
-func (TopicBaseData) TableName() string {
-	return DB_TEACHES + ".THAMGIADT"
+func (JoinTopicBaseData) TableName() string {
+	return DB_TEACHER + ".THAMGIADT"
 }

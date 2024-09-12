@@ -9,7 +9,7 @@ import (
 )
 
 var DB_URL = "root:12112004@tcp(127.0.0.1:3306)/manager_teaches?charset=utf8mb4&parseTime=True&loc=Local"
-var DB_TEACHES = "manager_teaches"
+var DB_TEACHER = "manager_teacher"
 
 var (
 	db *gorm.DB
@@ -33,7 +33,6 @@ func GetDB() *gorm.DB {
 	}
 	sqlDB.SetConnMaxIdleTime(5 * time.Second)
 	sqlDB.SetMaxIdleConns(50)
-	// SetMaxOpenConns sets the maximum number of open connections to the database.
 	sqlDB.SetMaxOpenConns(450)
 	sqlDB.SetConnMaxLifetime(10 * time.Minute)
 	DB = db
@@ -46,6 +45,13 @@ func Migration() (*gorm.DB, error) {
 	db.Exec("CREATE SCHEMA IF NOT EXISTS manager_teaches;")
 	tables := []interface{}{
 		&Teach{},
+		&WorkingBase{},
+		&JoinTopicBaseData{},
+		&TopicBaseData{},
+		&Major{},
+		&RelativeBaseData{},
+		&SubjectBase{},
+		&UserBaseData{},
 	}
 	for _, table := range tables {
 		err := db.AutoMigrate(table)

@@ -17,5 +17,5 @@ type TeachBaseData struct {
 }
 
 func (Teach) TableName() string {
-	return DB_TEACHES + ".GIAOVIEN"
+	return DB_TEACHER + ".GIAOVIEN"
 }

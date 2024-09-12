@@ -34,5 +34,5 @@ type Register struct {
 }
 
 func (UserBaseData) TableName() string {
-	return DB_TEACHES + ".USERS"
+	return DB_TEACHER + ".USERS"
 }

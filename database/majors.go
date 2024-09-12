@@ -16,5 +16,5 @@ type MajorBaseData struct {
 }
 
 func (Major) TableName() string {
-	return DB_TEACHES + ".BOMON"
+	return DB_TEACHER + ".BOMON"
 }

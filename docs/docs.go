@@ -10,9 +10,9 @@ const docTemplate = `{
         "description": "{{escape .Description}}",
         "title": "{{.Title}}",
         "contact": {
-            "name": "Tran Quang Thuan",
-            "url": "https://shub.vn",
-            "email": "tranthuan.121104@gmail.com"
+            "name": "Quang Thuan",
+            "url": "0977109327",
+            "email": "tranquanthuan132@gmail.com"
         },
         "version": "{{.Version}}"
     },
@@ -7924,8 +7924,8 @@ var SwaggerInfo = &swag.Spec{
 	Host:             "",
 	BasePath:         "/api/v1",
 	Schemes:          []string{},
-	Title:            "DRLVN API",
-	Description:      "This is the DRLVN API Docs for using internally.",
+	Title:            "QLGV API",
+	Description:      "This is the QLGV API Docs for using internally.",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 	LeftDelim:        "{{",

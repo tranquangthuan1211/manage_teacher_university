@@ -1578,8 +1578,8 @@ info:
     email: support@shub.vn
     name: SHub Team
     url: https://shub.vn
-  description: This is the DRLVN API Docs for using internally.
-  title: DRLVN API
+  description: This is the QLGV APIDocs for using internally.
+  title: QLGV API
   version: "1.0"
 paths:
   /achievements:

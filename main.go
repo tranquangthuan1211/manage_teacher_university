@@ -4,7 +4,11 @@ import (
 	"fmt"
 	"myapi/api"
 	"myapi/database"
+	"myapi/docs"
+	"myapi/utils"
 	"runtime"
+
+	"github.com/gin-gonic/gin"
 )
 
 func configRuntime() {
@@ -19,6 +23,12 @@ func main() {
 		fmt.Println("Can not migrate the database! - ", err)
 	} else {
 		fmt.Println("Migrate the database successfully!")
+	}
+	ip := utils.GetOutboundIP()
+	if utils.RUNNING_MODE == gin.ReleaseMode {
+		docs.SwaggerInfo.Host = "api.drl.vn"
+	} else {
+		docs.SwaggerInfo.Host = ip + ":8080"
 	}
 	fmt.Println(db)
 	fmt.Println("Hello, World!")

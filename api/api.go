@@ -5,9 +5,11 @@ import (
 	"log"
 	"myapi/utils"
 	"strings"
+	"time"
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
+	cors "github.com/itsjamie/gin-cors"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 	"gorm.io/gorm"
@@ -26,6 +28,15 @@ var router = []Routes{
 
 func RunServer(db *gorm.DB) {
 	r := gin.Default()
+	corsConfig := cors.Config{
+		Origins:         "*",
+		Methods:         "GET, PUT, POST, DELETE, OPTIONS, PATCH",
+		RequestHeaders:  "Origin, Authorization, Content-Type",
+		ExposedHeaders:  "",
+		MaxAge:          15 * time.Second,
+		ValidateHeaders: false,
+	}
+	r.Use(cors.Middleware(corsConfig))
 
 	authMiddleware, err := getAuthMiddleware(db)
 	if err != nil {
@@ -65,7 +76,6 @@ func CheckInputError(input interface{}) error {
 
 	fields := []string{}
 	for _, err := range err.(validator.ValidationErrors) {
-		// Dang An: err.Namespace() can differ when a custom TagNameFunc is registered or not (In this case, we use the name from json tag)
 		fields = append(fields, err.Namespace()+" "+err.Type().Name())
 	}
 	return fmt.Errorf("Error:Field validation for: %v", strings.Join(fields, ", "))
