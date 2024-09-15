@@ -9,7 +9,7 @@ import (
 )
 
 var DB_URL = "root:12112004@tcp(127.0.0.1:3306)/manager_teaches?charset=utf8mb4&parseTime=True&loc=Local"
-var DB_TEACHER = "manager_teacher"
+var DB_TEACHER = "manager_teaches"
 
 var (
 	db *gorm.DB
@@ -17,9 +17,9 @@ var (
 )
 
 type BaseModel struct {
-	CreatedAt time.Time      `json:"created_at" example:"2023-08-17T15:40:58.131023+07:00"`
-	UpdatedAt time.Time      `json:"updated_at" example:"2023-08-17T15:40:58.131023+07:00"`
-	DeletedAt gorm.DeletedAt `json:"deleted_at" gorm:"index" swaggertype:"string" example:"2023-08-17T15:40:58.131023+07:00"`
+	CreatedAt time.Time `json:"created_at" example:"2023-08-17T15:40:58.131023+07:00"`
+	UpdatedAt time.Time `json:"updated_at" example:"2023-08-17T15:40:58.131023+07:00"`
+	// DeletedAt gorm.DeletedAt `json:"deleted_at" gorm:"index" swaggertype:"string" example:"2023-08-17T15:40:58.131023+07:00"`
 }
 
 func GetDB() *gorm.DB {

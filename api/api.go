@@ -21,8 +21,9 @@ type Routes struct {
 }
 
 var router = []Routes{
-	{"/teach", []func(*gin.RouterGroup, *gorm.DB){getTeach, createTeach}},
+	{"/teach", []func(*gin.RouterGroup, *gorm.DB){getTeach, getTeachByID, updateTeach, createTeach, deleteTeach}},
 	{"/major", []func(*gin.RouterGroup, *gorm.DB){getMajor}},
+	{"/leader-major", []func(*gin.RouterGroup, *gorm.DB){getLeaderMajor, updateLeaderMajor}},
 	{"/join-topic", []func(*gin.RouterGroup, *gorm.DB){getJoinTopic}},
 }
 
