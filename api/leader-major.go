@@ -41,17 +41,15 @@ func updateLeaderMajor(router *gin.RouterGroup, db *gorm.DB) {
 	router.PATCH("", func(c *gin.Context) {
 		// Nhận dữ liệu từ body của request
 		var input struct {
-			MABM     string `json:"MABM"`     // Mã bộ môn
-			TRUONGBM string `json:"TRUONGBM"` // Mã giáo viên trưởng bộ môn
+			MABM     string `json:"MABM"`
+			TRUONGBM string `json:"TRUONGBM"`
 		}
 
-		// Kiểm tra nếu dữ liệu đầu vào không hợp lệ
 		if err := c.ShouldBindJSON(&input); err != nil {
 			c.JSON(400, gin.H{"error": "Dữ liệu không hợp lệ"})
 			return
 		}
 
-		// Kiểm tra xem mã giáo viên đã là trưởng bộ môn của bộ môn nào chưa
 		var existingMajor struct {
 			MABM string
 		}
@@ -61,7 +59,6 @@ func updateLeaderMajor(router *gin.RouterGroup, db *gorm.DB) {
 			First(&existingMajor).Error
 
 		if err == nil {
-			// Nếu tìm thấy giáo viên đã là trưởng bộ môn, thông báo lỗi
 			c.JSON(400, gin.H{
 				"error": "Giáo viên này đã là trưởng bộ môn của bộ môn khác",
 			})
